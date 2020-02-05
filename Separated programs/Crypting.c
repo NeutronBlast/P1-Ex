@@ -6,7 +6,7 @@ int main()
 	char t1[75];
 	char t2[75];
 	char ABC[27] = "abcdefghijklmnopqrstuvwxyz";
-	printf("Escribe un texto y el programa lo encriptara en 'n' posiciones del abecedario \n");
+	printf("Type a text, the program will crypt it 'n' positions forward in the alphabet \n");
 	fgets(t1, 75, stdin);
 	strcpy_s(t2, "");
 
@@ -14,7 +14,7 @@ int main()
 		t1[strlen(t1) - 1] = '\0';
 	do
 	{
-		printf("Escribe el numero de posiciones del abecedario donde se movera \n");
+		printf("Type the number of positions in the alphabet that the program will crypt on \n");
 		scanf_s("%d", &n);
 	} while (n < 0);
 
