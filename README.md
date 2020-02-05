@@ -26,3 +26,6 @@ Let *word 1* be house and *word 2* be music, the output will be: *hmouussiec*
 789
 
 
+4. **Common digits**: Given two numbers print a third one with the common digits between the first and the second number. Example: Given 721 and 717 the output of the program will be: 71. Do not repeat the numbers in the generated one.
+
+5. **Crypting**: Given a word encode it at n positions forward in the alphabet. Example: Given the word hello and n = 2 the output of the program should be *jfnnq*, with the same word and n = 1 the output would be *ifmmp*
