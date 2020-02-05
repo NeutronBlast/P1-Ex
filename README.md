@@ -35,13 +35,17 @@ Let *word 1* be house and *word 2* be music, the output will be: *hmouussiec*
 7. **Transposed matrix**: Given a matrix (2 dimension array) calculate its transposed. Example, given this matrix:
 
 | 55 | 18 | 84 |
+
 | 24 | 12 | 19 |
+
 | 78 | 90 | 42 |
 
 The output of the program should be:
 
 | 55 | 24 | 78 |
+
 | 18 | 12 | 90 |
+
 | 84 | 19 | 42 |
 
 8. **Triangular matrix**: Given a square matrix (same number of rows and columns) the program must tell if a matrix is triangular or not. Remember that a matrix is triangular above or under its main diagonal are zeros
