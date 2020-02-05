@@ -41,7 +41,7 @@ void mostrar(int A[][30], int f, int c)
 int minimo(int E[][30], int f, int c)
 {
 	int i, j, min;
-	min = E[1][1];
+	min = E[0][0];
 	i = 0;
 	while (i <= f)
 	{

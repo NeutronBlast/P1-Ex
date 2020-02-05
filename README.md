@@ -54,4 +54,4 @@ The output of the program should be:
 
 10. **Matrix multiplication**
 
-11. **Sorting**: Given an unidimensional array leave the even numbers at the beginning and the odd numbers at the end (same order they appear)
+11. **Grouping**: Given an unidimensional array leave the even numbers at the beginning and the odd numbers at the end (same order they appear)

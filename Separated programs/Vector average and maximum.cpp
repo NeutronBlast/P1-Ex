@@ -4,7 +4,7 @@ int x, p;
 void llenar(int A[])
 {
 	int i;
-	i = 1;
+	i = 0;
 	while (i <= 4)
 	{
 		printf("Grade of the student \n");
@@ -17,7 +17,7 @@ int promedio(int A[])
 {
 	int s, i;
 	s = 0;
-	i = 1;
+	i = 0;
 	while (i <= 4)
 	{
 		s = s + A[i];
@@ -29,8 +29,8 @@ int promedio(int A[])
 int maximo(int A[])
 {
 	int m, i;
-	m = A[1];
-	i = 2;
+	m = A[0];
+	i = 1;
 	while (i <= 4)
 	{
 		if (A[i] > m)

@@ -3,9 +3,9 @@
 	{
 		long int z,p,x,y,dx,dy,comun,auy;
 		printf("Escribe 2 numeros y el programa generara un tercero con los digitos comunes de x e y \n" );
-		scanf("%ld", &x);
+		scanf_s("%ld", &x);
 		printf("y? \n");
-		scanf("%ld", &y);
+		scanf_s("%ld", &y);
 		z=0;
 		p=1;
 			while (x>0)
