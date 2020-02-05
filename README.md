@@ -1,7 +1,7 @@
 # P1-Ex
  Various basic algorithm's exercises written in C. Compiled with Visual Studio 2019, do not use Dev C++ to compile these files.
 
-# Exercises
+# Basic Exercises
 This repository contains the following exercises
 
 1. **Combine two words**: The program will ask the user to input text 1 and text 2 and it will return a combination between the words letter by letter, for instance
@@ -55,3 +55,16 @@ The output of the program should be:
 10. **Matrix multiplication**
 
 11. **Grouping**: Given an unidimensional array leave the even numbers at the beginning and the odd numbers at the end (same order they appear)
+
+# Linked list management exercises
+
+1. **Insert element at the beginning of the list**
+2. **Insert element at the end of the list**
+3. **Insert at the end of the list without repeating**: Insert an element at the end of the list that doesn't exist in the list yet, if it already exists, throw an error
+4. **Insert element neatly**: Given this linked list: [4]->[17]->[32]->[84] by inserting the element *19* in it, the output of the program should be: [4]->[17]->[19]->[32]->[84]
+5. **Insert element neatly without repeating**
+6. **Insert element before a given element**: Given this linked list: [4]->[17]->[32]->[84] by inserting the element *19* in it before the *17*, the output of the program should be: [4]->[19]->[17]->[32]->[84]
+7. **Insert element after a given element**
+8. **Delete element**
+11. **Show list**
+12. **Invert list**: Given this linked list [4]->[17]->[32]->[84] the output of the program should be [84]->[32]->[17]->[4]
