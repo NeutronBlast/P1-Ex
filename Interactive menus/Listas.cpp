@@ -200,50 +200,50 @@ void eliminar(lista** p, int x) {
 		}
 }
 
-void repetidos(lista* p) {
+void repetidos(lista** p) {
 	/* Elimina elementos repetidos */
 	/* Opcion 9 */
-	lista* t = p, * ax = t, * temp = t;
+	lista* t = *p, * ax = t;
+
 	while (t) {
-		*ax = *t;
-		while (ax->prox != NULL) {
-			if (ax->prox->valor == t->valor) {
-				temp = ax->prox;
-				ax->prox = temp->prox;
-				delete(temp);
+		ax = NULL;
+		ax = t;
+		int cont = 0;
+		while (ax) {
+			if (ax->valor == t->valor) {
+				cont++;
+				if (cont > 1) {
+					eliminar(&(*p), t->valor);
+					t = *p;
+					break;
+				}
 			}
-			else
-				ax = ax->prox;
+			ax = ax->prox;
 		}
 		t = t->prox;
 	}
+
+}
+
+int isPrimo(int x) {
+	for (int i = 2; i <= x / 2; i++) {
+		if (x % i == 0) return 0;
+	}
+	return 1;
 }
 
 void primos(lista** p)
 /* Elimina numeros primos */
 /* Opcion 10 */
 {
-	lista* t = *p, * aux = *p, * temp = *p;
-	int div = 2, prim = 1;
-	while (t)
-	{
-		prim = 1;
-		while ((div <= (t->valor) / 2) && (prim == 1))
-		{
-			if (t->valor % div == 0)
-				prim = 0;
-			div++;
-		}
+	lista* t = *p;
 
-		if (prim == 1)
-		{
-			aux = t->prox;
-			temp = t;
-			t = t->prox;
-			delete(temp);
+	while (t) {
+		if (isPrimo(t->valor) == 1) {
+			eliminar(&(*p), t->valor);
+			t = *p;
 		}
-		else t = t->prox;
-
+		t = t->prox;
 	}
 }
 
@@ -332,7 +332,7 @@ int main() {
 			scanf_s("%i", &x);
 			eliminar(&p, x);
 			break;
-		case 9: repetidos(p);
+		case 9: repetidos(&p);
 			printf("Se han eliminado los repetidos\n");
 			break;
 		case 10: primos(&p);

@@ -66,5 +66,7 @@ The output of the program should be:
 6. **Insert element before a given element**: Given this linked list: [4]->[17]->[32]->[84] by inserting the element *19* in it before the *17*, the output of the program should be: [4]->[19]->[17]->[32]->[84]
 7. **Insert element after a given element**
 8. **Delete element**
+9. **Delete all repeated elements**
+10. **Delete all non composite numbers**
 11. **Show list**
 12. **Invert list**: Given this linked list [4]->[17]->[32]->[84] the output of the program should be [84]->[32]->[17]->[4]
